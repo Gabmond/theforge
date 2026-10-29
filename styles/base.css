@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  width:5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  background-color: var(--secondary-shade);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-shade);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-base);
+}
+
+::selection {
+  background-color: var(--secondary-base);
+  color: var(--white);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--text-base);
+  line-height: var(--line-height-normal);
+  color: var(--grey-tint);
+  background-color: var(--secondary-shade);
+}
+
+.my-container {
+  max-width: 1149px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+h1 {
+  font-size: var(--text-h1);
+  line-height: var(--line-height-tight);
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-size: var(--text-h3);
+}
+
+p {
+  font-size: var(--text-base);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:link, a:visited {
+  color: var(--grey-tint);
+  font-weight: var(--font-weight-bold);
+}
+
+a:hover, a:active {
+  color: var(--primary-base);
+  font-weight: var(--font-weight-bold);
+}
+
+/* ---------------------- ANIMATION -------------------- */
+
+/* .animation {
+  opacity: 0;
+  translate: -50%;
+  transition: translate 0.8s ease-in-out, opacity 1.5s ease;
+}
+
+.animation.show {
+  opacity: 1;
+  translate: 0;
+} */
+
+/* ---------------------- COMPONENTS -------------------- */
+.btns {
+  padding: 1.2rem 2.4rem;
+  font-size: var(--text-sm);
+  border-radius: 4px;
+}
+
+.btn-primary:link, .btn-primary:visited {
+  background-color: var(--primary-base);
+  color: var(--black);
+  border: 1px solid var(--primary-base);
+}
+
+.btn-primary:active, .btn-primary:hover {
+  background-color: var(--primary-shade);
+  border: 1px solid var(--primary-shade);
+}
+
+.btn-secondary:link, .btn-secondary:visited {
+  background-color: var(--none);
+  border: 1px solid var(--white);
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+  background-color: var(--primary-shade);
+  color: var(--white);
+}
+
+.navButton.active {
+  color: var(--primary-base);
+  font-weight: var(--font-weight-bold);
+}
+
+/* ---------------------- SECTIONS ---------------------- */
+
+/* ----- Navbar ----- */
+.navbar {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: height 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  height: var(--navbar-height);
+  background-color: #000000b6;
+  backdrop-filter: blur(9px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(154, 153, 168, 0.089);
+}
+
+.navbar-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-div ul {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-div a {
+  font-weight: var(--font-weight-normal);
+  font-size: var(--text-sm);
+}
+
+
+/* ----- Hero section ----- */
+.hero-section {
+  background-image: url(../images/hero_background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* margin-bottom: 10rem; */
+}
+
+.hero-section-div {
+  height: 100vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-title {
+  font-size: var(--text-h1);
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.hero-title span {
+  font-weight: var(--font-weight-extra-bold);
+  font-size: var(--text-h1);
+  color: var(--primary-base);
+}
+
+.hero-title .no2 {
+  display: block;
+}
+
+.hero-div h2 {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.hero-div p {
+  color: var(--primary-base);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 0;
+  align-items: center;
+}
+
+.hero-icons {
+  position: absolute;
+  bottom: 2rem;
+  left: -3rem;
+}
+
+.hero-icons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+
