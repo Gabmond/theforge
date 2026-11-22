@@ -1,54 +1,69 @@
-/* ---------------- Design tokens ------------------ */
-/* EDIT: Adjust these tokens to change the site palette, typography, spacing, and component feel. */
 :root {
-  /* Typography scale starts at the 360px mobile layout. */
-  --text-sm: 1.4rem;
-  --text-base: 1.6rem;
-  --text-paragraph: 1.8rem;
-  --text-h5: 2rem;
-  --text-h4: 2.4rem;
-  --text-h3: 2.8rem;
-  --text-h2: 3.6rem;
-  --text-h1: 4.8rem;
-  --font-weight-normal: 400;
-  --font-weight-bold: 700;
-  --font-weight-extra-bold: 800;
-  --line-height-tight: 1.08;
-  --line-height-normal: 1.55;
-  --line-height-spaced: 1.75;
-  --letter-spacing-tight: -0.08rem;
-  --letter-spacing-wide: 0.2rem;
-  --font-family: "Roboto Condensed", sans-serif;
-  /* Red metal from The Forge mark, with restrained charcoal surfaces. */
-  --primary-base: #ff2929;
-  --primary-tint: #ffb4b4;
-  --primary-shade: #a90b0b;
-  --secondary-base: #a6a1a1;
-  --secondary-tint: #d5d0d0;
-  --secondary-shade: #090909;
-  --tertiary-base: #f15a5a;
-  --tertiary-tint: #ffc3c3;
-  --tertiary-shade: #650707;
-  --grey-base: #777171;
-  --grey-tint: #f2eeee;
-  --grey-shade: #171516;
-  --white: #ffffff;
-  --black: #000000;
-  --none: none;
-  --navbar-height: 7.2rem;
-  --space-xs: 0.8rem;
-  --space-sm: 1.6rem;
-  --space-md: 2.4rem;
-  --space-lg: 4rem;
-  --space-xl: 6.4rem;
-  --space-2xl: 8rem;
-  --radius-sm: 0.4rem;
-  --radius-md: 1rem;
-  --radius-lg: 1.8rem;
-  --radius-pill: 99rem;
-  --shadow-card: 0 2rem 6rem rgb(0 0 0 / 24%);
-  --transition-base: 240ms ease;
-}
+   /* =========================
+      TYPOGRAPHY SCALE
+   ========================== */
+   --text-sm: 1.4rem;
+   --text-base: 1.6rem;
+   --text-paragraph: 1.8rem;
+   --text-h5: 2rem;
+   --text-h4: 2.4rem;
+   --text-h3: 2.8rem;
+   --text-h2: 3.6rem;
+   --text-h1: 4.8rem;
+  
+   /* FONT WEIGHT */
+   --font-weight-normal: 400;
+   --font-weight-bold: 700;
+   --font-weight-extra-bold: 800;
+  
+   /* LINE HEIGHT */
+   --line-height-tight: 1.08;
+   --line-height-normal: 1.55;
+   --line-height-spaced: 1.75;
+  
+   /* LETTER SPACING */
+   --letter-spacing-tight: -0.08rem;
+   --letter-spacing-wide: 0.2rem;
+  
+   /* FONT FAMILY */
+   --font-family: "Roboto Condensed", sans-serif;
+  
+   /* =========================
+      COLORS
+   ========================== */
+   --primary-base: #ff2929;
+   --primary-tint: #ffb4b4;
+   --primary-shade: #a90b0b;
+   --secondary-base: #a6a1a1;
+   --secondary-tint: #d5d0d0;
+   --secondary-shade: #090909;
+   --tertiary-base: #f15a5a;
+   --tertiary-tint: #ffc3c3;
+   --tertiary-shade: #650707;
+   --grey-base: #777171;
+   --grey-tint: #f2eeee;
+   --grey-shade: #171516;
+   --white: #ffffff;
+   --black: #000000;
+   --none: none;
+
+
+   --navbar-height: 7.2rem;
+   --space-xs: 0.8rem;
+   --space-sm: 1.6rem;
+   --space-md: 2.4rem;
+   --space-lg: 4rem;
+   --space-xl: 6.4rem;
+   --space-2xl: 8rem;
+   --radius-sm: 0.4rem;
+   --radius-md: 1rem;
+   --radius-lg: 1.8rem;
+   --radius-pill: 99rem;
+   --shadow-card: 0 2rem 6rem rgb(0 0 0 / 24%);
+   --transition-base: 240ms ease;
+  }  
+
+
 
 /* ---------------- Base ------------------ */
 *,
@@ -319,6 +334,7 @@ ul, ol {
   font-size: var(--text-h1);
   font-weight: var(--font-weight-extra-bold);
   letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
 }
 .hero-intro {
   max-width: 57rem;
